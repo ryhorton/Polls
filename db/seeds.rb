@@ -28,6 +28,9 @@ p3q1 = Question.create!(poll_id: p3.id, text: "Poll three question one?")
 #poll 1
 p1q1ac1 = AnswerChoice.create!(question_id: p1q1.id, text: "p1q1ac1")
 p1q1ac2 = AnswerChoice.create!(question_id: p1q1.id, text: "p1q1ac2")
+p1q1ac3 = AnswerChoice.create!(question_id: p1q1.id, text: "p1q1ac3")
+p1q1ac4 = AnswerChoice.create!(question_id: p1q1.id, text: "p1q1ac4")
+
 
 p1q2ac1 = AnswerChoice.create!(question_id: p1q2.id, text: "p1q2ac1")
 p1q2ac2 = AnswerChoice.create!(question_id: p1q2.id, text: "p1q2ac2")
@@ -42,16 +45,17 @@ p2q2ac2 = AnswerChoice.create!(question_id: p2q2.id, text: "p2q2ac2")
 #Poll 3
 p3q1ac1 = AnswerChoice.create!(question_id: p3q1.id, text: "p3q1ac1")
 p3q1ac2 = AnswerChoice.create!(question_id: p3q1.id, text: "p3q1ac2")
-p3q2ac3 = AnswerChoice.create!(question_id: p3q1.id, text: "p3q1ac3")
+p3q1ac3 = AnswerChoice.create!(question_id: p3q1.id, text: "p3q1ac3")
 
 #poll 1
-p1q1r1 = Response.create!(answer_choice_id: p1q1ac1.id, user_id: u1.id)
-p1q1r2 = Response.create!(answer_choice_id: p1q1ac2.id, user_id: u2.id)
-p1q1r3 = Response.create!(answer_choice_id: p1q1ac2.id, user_id: u3.id)
+p1q1r1 = Response.create!(answer_choice_id: p1q1ac2.id, user_id: u2.id)
+p1q1r2 = Response.create!(answer_choice_id: p1q1ac2.id, user_id: u3.id)
+p1q1r3 = Response.create!(answer_choice_id: p1q1ac2.id, user_id: u4.id)
+p1q1r4 = Response.create!(answer_choice_id: p1q1ac2.id, user_id: u5.id)
 
-p1q2r1 = Response.create!(answer_choice_id: p1q2ac1.id, user_id: u1.id)
-p1q2r2 = Response.create!(answer_choice_id: p1q2ac1.id, user_id: u2.id)
-p1q2r3 = Response.create!(answer_choice_id: p1q2ac2.id, user_id: u3.id)
+
+p1q2r1 = Response.create!(answer_choice_id: p1q2ac1.id, user_id: u2.id)
+p1q2r2 = Response.create!(answer_choice_id: p1q2ac2.id, user_id: u3.id)
 
 #poll 2
 p2q1r1 = Response.create!(answer_choice_id: p2q1ac1.id, user_id: u3.id)
